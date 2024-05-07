@@ -2,7 +2,7 @@ package Entities.Agencies;
 
 public class Agency {
 
-    private String number;
+    private final String number;
 
     public Agency(String number) {
         this.number = number;
@@ -10,10 +10,6 @@ public class Agency {
 
     public String getNumber() {
         return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
     }
 }
 
