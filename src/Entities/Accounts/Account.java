@@ -2,8 +2,8 @@ package Entities.Accounts;
 
 public class Account {
 
-    private int accountNumber;
-    private Double amount;
+    private final int accountNumber;
+    private final Double amount;
 
     public Account(int accountNumber, Double amount) {
         this.accountNumber = accountNumber;
@@ -14,16 +14,8 @@ public class Account {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
     public Double getAmount() {
         return amount;
-    }
-
-    public void setAmount(Double amount) {
-        this.amount = amount;
     }
 }
 

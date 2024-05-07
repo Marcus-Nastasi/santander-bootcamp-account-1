@@ -5,9 +5,9 @@ import Entities.Agencies.Agency;
 
 public class Client {
 
-    private String name;
-    private Agency agency;
-    private Account account;
+    private final String name;
+    private final Agency agency;
+    private final Account account;
 
     public Client(String name, Agency agency, Account account) {
         this.name = name;
@@ -19,24 +19,12 @@ public class Client {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public Agency getAgency() {
         return agency;
     }
 
-    public void setAgency(Agency agency) {
-        this.agency = agency;
-    }
-
     public Account getAccount() {
         return account;
-    }
-
-    public void setAccount(Account account) {
-        this.account = account;
     }
 
     @Override
